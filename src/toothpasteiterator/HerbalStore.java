@@ -14,8 +14,13 @@ public class HerbalStore implements ToothPaste{
 	}
 	private void addItem(String name, String description, double price ) {
 		ToothPasteItem toothPasteItem = new ToothPasteItem(name, description , price );
-		toothPasteItems[position] = toothPasteItem;
-		position = position + 1;
+		if(position >= toothPasteItems.length) {
+			System.out.println("Full ,Cannot add more toothpaste");
+		}
+		else {
+			toothPasteItems[position] = toothPasteItem;
+			position = position + 1;
+		}
 		
 	}
 	public Iterator getIterator() {
