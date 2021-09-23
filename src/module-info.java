@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author xyzalpha
+ *
+ */
+module toothpasteiterator {
+}
